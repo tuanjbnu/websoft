@@ -1,0 +1,204 @@
+/* Container menu căn giữa */
+header nav ul {
+  display: flex;
+  justify-content: center;  /* căn giữa ngang */
+  gap: 20px;                /* khoảng cách giữa các nút */
+  padding: 20px 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* Tạo nút cho từng link menu */
+header nav ul li a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0a3d62;  /* màu nền nút */
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+  user-select: none;
+}
+
+/* Hiệu ứng hover */
+header nav ul li a:hover {
+  background-color: #f6b93b;
+  color: #0a3d62;
+  transform: trasnlateY(-2px);
+}
+
+/* Đánh dấu trang hiện tại */
+header nav ul li a.active {
+  background-color: #f6b93b;
+  color: #0a3d62;
+  cursor: default;
+  transform: scale(1.15);
+  pointer-events: none;
+}
+
+.container {
+  text-align: center; /* căn giữa nội dung */
+}
+
+.site-title {
+  margin: 0 auto 20px auto; /* canh giữa, margin dưới để cách menu */
+  font-weight: 700;
+  color: #0a3d62;
+}
+
+/* Software Grid: 2 hàng x 4 cột cố định */
+.software-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 220px);
+  grid-template-rows: repeat(2, 280px);
+  justify-content: center;
+  gap: 60px 20px;
+  margin: 0 auto;
+  min-height: calc(280px * 2 + 20px); /* đảm bảo chiều cao tối thiểu */
+}
+
+/* Thẻ phần mềm */
+.software-card {
+  background-color: linear-gradient(145deg, #ffffff, #e6e6e6);
+  border-radius: 12px;
+  padding: 20px 15px; 
+  text-align: center;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  cursor: pointer;
+  border: 1px solid #ddd;
+
+}
+
+/* Thẻ ảo (không có dữ liệu) */
+.software-card.empty {
+  cursor: default;
+  background-color: transparent;
+  box-shadow: none;
+  pointer-events: none;
+}
+
+/* Hover chỉ áp dụng cho thẻ có dữ liệu */
+.software-card:not(.empty):hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  background-color: #fdf8e4;
+}
+
+.software-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 15px;
+  user-select: none;
+  pointer-events: none;
+}
+
+.software-card h4 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #0a3d62;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.software-card p {
+  font-size: 14px;
+  color: #555;
+  height: 48px;
+  overflow: hidden;
+  margin-bottom: auto;
+  line-height: 1.2em;
+}
+
+.btn-download {
+  display: inline-block;
+  background-color: #079992;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 700;
+  margin-top: 15px;
+  transition: background 0.3s, transform 0.3s;
+  user-select: none;
+}
+
+.btn-download:hover { 
+  background-color: #38ada9;
+  transform: scale(1.1);
+}
+
+/* Phân trang */
+.pagination {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center; /* căn giữa ngang */
+  align-items: center;     /* căn giữa dọc */
+  gap: 10px;               /* khoảng cách giữa các nút */
+  width: 100%;             /* đảm bảo chiếm hết chiều ngang container */
+  box-sizing: border-box;
+}
+
+.pagination button {
+  background-color: #0a3d62;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.pagination button:hover:not(:disabled) {
+  background-color: #f6b93b;
+  color: #0a3d62;
+  transform: scale(1.1);
+}
+
+.pagination button:disabled {
+  background-color: #aaa;
+  cursor: default;
+  color: #666;
+}
+
+.pagination button.active {
+  background-color: #f6b93b;
+  color: #0a3d62;
+  cursor: default;
+  transform: scale(1.15);
+}
+
+.featured-software .container {
+  position: relative;
+  padding-bottom: 60px; /* khoảng trống đủ để phân trang */
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .software-grid {
+    grid-template-columns: repeat(2, 220px);
+    grid-template-rows: repeat(4, 280px);
+    min-height: calc(280px * 4 + 60px);
+  }
+}
+
+@media (max-width: 480px) {
+  .software-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    min-height: auto;
+  }
+  .software-card {
+    height: auto;
+  }
+}
