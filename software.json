@@ -2,19 +2,19 @@
   {
     "id": "gamry",
     "name": "Gamry Potentiostat",
-    "desc": "Software for Gamry potentiostat machine",
+    "desc": "Gamry potentiostat",
     "icon": "images/icon_gamry.png",
-    "download": "#",
-    "category": ["all"],
+    "download": "https://aheskorea.cloud/software/gamry",
+    "category": ["all", "science"],
     "featured": true
   },
   {
     "id": "autocad",
     "name": "AutoCAD",
-    "desc": "Computer-aided design (CAD) software",
+    "desc": "Computer-aided design",
     "icon": "images/icon_autocad.png",
-    "download": "#",
-    "category": ["all"],
+    "download": "https://aheskorea.cloud/software/autocad",
+    "category": ["all", "graphic"],
     "featured": true
   },
   {
@@ -22,8 +22,8 @@
     "name": "MATLAB",
     "desc": "Numerical computing and simulation",
     "icon": "images/icon_matlab.png",
-    "download": "#",
-    "category": ["all"],
+    "download": "https://aheskorea.cloud/software/matlab",
+    "category": ["all", "science", "graphic"],
     "featured": true
   },
   {
@@ -31,8 +31,8 @@
     "name": "LabVIEW",
     "desc": "Graphical programming for engineering systems",
     "icon": "images/icon_labview.png",
-    "download": "#",
-    "category": ["all"],
+    "download": "https://aheskorea.cloud/software/labview",
+    "category": ["all", "science", "graphic"],
     "featured": true
   },
   {
@@ -40,7 +40,7 @@
     "name": "Microsoft Office 2021",
     "desc": "Office suite for document processing",
     "icon": "images/icon_office2021.png",
-    "download": "#",
+    "download": "https://aheskorea.cloud/software/office2021",
     "category": ["office", "all"],
     "featured": true
   },
@@ -49,7 +49,7 @@
     "name": "Photoshop",
     "desc": "Image editing and graphic design software",
     "icon": "images/icon_photoshop.png",
-    "download": "#",
+    "download": "https://aheskorea.cloud/software/photoshop",
     "category": ["graphic", "all"],
     "featured": true
   },
@@ -58,8 +58,8 @@
     "name": "OriginLab",
     "desc": "Data analysis and graphing software",
     "icon": "images/icon_originlab.png",
-    "download": "https://example.com/originlab",
-    "category": ["graphic", "all"],
+    "download": "https://aheskorea.cloud/software/originlab",
+    "category": ["graphic", "all", "science"],
     "featured": true
   },
   {
@@ -67,7 +67,7 @@
     "name": "EndNote",
     "desc": "The Citation & Reference Management Tool",
     "icon": "images/icon_endnote.png",
-    "download": "https://example.com/endnote",
+    "download": "https://aheskorea.cloud/software/endnote20",
     "category": ["science", "all"],
     "featured": true
   },
@@ -76,8 +76,8 @@
     "name": "ImageJ",
     "desc": "A Java-based image processing program",
     "icon": "images/icon_imagej.png",
-    "download": "https://example.com/endnote",
-    "category": ["science", "all"],
+    "download": "https://aheskorea.cloud/software/imagej",
+    "category": ["science", "all", "graphic"],
     "featured": false
   }
 ]
