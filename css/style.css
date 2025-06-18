@@ -1,8 +1,8 @@
 /* Container menu căn giữa */
 header nav ul {
   display: flex;
-  justify-content: center;  /* căn giữa ngang */
-  gap: 20px;                /* khoảng cách giữa các nút */
+  justify-content: center;
+  gap: 20px;
   padding: 20px 0;
   margin: 0;
   list-style: none;
@@ -12,7 +12,7 @@ header nav ul {
 header nav ul li a {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #0a3d62;  /* màu nền nút */
+  background-color: #0a3d62;
   color: white;
   font-weight: 600;
   border-radius: 8px;
@@ -25,7 +25,7 @@ header nav ul li a {
 header nav ul li a:hover {
   background-color: #f6b93b;
   color: #0a3d62;
-  transform: trasnlateY(-2px);
+  transform: translateY(-2px); /* Sửa lỗi: trasnlate → translate */
 }
 
 /* Đánh dấu trang hiện tại */
@@ -38,11 +38,11 @@ header nav ul li a.active {
 }
 
 .container {
-  text-align: center; /* căn giữa nội dung */
+  text-align: center;
 }
 
 .site-title {
-  margin: 0 auto 20px auto; /* canh giữa, margin dưới để cách menu */
+  margin: 0 auto 20px auto;
   font-weight: 700;
   color: #0a3d62;
 }
@@ -55,28 +55,24 @@ header nav ul li a.active {
   justify-content: center;
   gap: 60px 20px;
   margin: 0 auto;
-  min-height: calc(280px * 2 + 20px); /* đảm bảo chiều cao tối thiểu */
+  min-height: calc(280px * 2 + 20px);
 }
 
 /* Thẻ phần mềm */
 .software-card {
-  background-color: linear-gradient(145deg, #ffffff, #e6e6e6);
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
   border-radius: 12px;
-  padding: 20px 15px; 
+  padding: 20px 15px;
   text-align: center;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease,
-    background-color 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   height: 100%;
   cursor: pointer;
   border: 1px solid #ddd;
-
 }
 
 /* Thẻ ảo (không có dữ liệu) */
@@ -108,18 +104,23 @@ header nav ul li a.active {
   margin-bottom: 12px;
   color: #0a3d62;
   font-weight: 700;
+  height: 48px; /* Cố định chiều cao để đồng đều */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   flex-shrink: 0;
 }
 
+/* Mô tả phần mềm (ẩn an toàn) */
 .software-card p {
-  font-size: 14px;
-  color: #555;
-  height: 48px;
-  overflow: hidden;
-  margin-bottom: auto;
-  line-height: 1.2em;
+  visibility: hidden;
+  height: 0;
+  margin: 0;
+  padding: 0;
 }
 
+/* Nút Download */
 .btn-download {
   display: inline-block;
   background-color: #079992;
@@ -127,12 +128,12 @@ header nav ul li a.active {
   padding: 10px 18px;
   border-radius: 8px;
   font-weight: 700;
-  margin-top: 15px;
+  margin-top: auto; /* Đẩy nút xuống dưới cùng */
   transition: background 0.3s, transform 0.3s;
   user-select: none;
 }
 
-.btn-download:hover { 
+.btn-download:hover {
   background-color: #38ada9;
   transform: scale(1.1);
 }
@@ -141,10 +142,10 @@ header nav ul li a.active {
 .pagination {
   margin-top: 60px;
   display: flex;
-  justify-content: center; /* căn giữa ngang */
-  align-items: center;     /* căn giữa dọc */
-  gap: 10px;               /* khoảng cách giữa các nút */
-  width: 100%;             /* đảm bảo chiếm hết chiều ngang container */
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
   box-sizing: border-box;
 }
 
@@ -180,7 +181,7 @@ header nav ul li a.active {
 
 .featured-software .container {
   position: relative;
-  padding-bottom: 60px; /* khoảng trống đủ để phân trang */
+  padding-bottom: 60px;
 }
 
 /* Responsive */
@@ -198,6 +199,7 @@ header nav ul li a.active {
     grid-template-rows: none;
     min-height: auto;
   }
+
   .software-card {
     height: auto;
   }
