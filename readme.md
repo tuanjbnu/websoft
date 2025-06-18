@@ -1,2 +1,1 @@
-Software house
 TTNguyen
