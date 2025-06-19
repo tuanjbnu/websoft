@@ -67,8 +67,8 @@
     "name": "EndNote",
     "desc": "The Citation & Reference Management Tool",
     "icon": "images/icon_endnote.png",
-    "download": "https://aheskorea.cloud/software/endnote20",
-    "category": ["science", "all"],
+    "download": "https://aheskorea.cloud/software/endnote25",
+    "category": ["science", "all", "office"],
     "featured": true
   },
   {
@@ -87,6 +87,13 @@
     "download": "https://aheskorea.cloud/software/chemoffice",
     "category": ["science", "all", "graphic", "office"],
     "featured": false
+  },
+    "id": "peakfit412",
+    "name": "Peak Fit 4.12",
+    "desc": "A software package for peak separation and analysis",
+    "icon": "images/icon_peakfit.png",
+    "download": "https://aheskorea.cloud/software/peakfit4.12",
+    "category": ["science", "all", "graphic"],
+    "featured": false
   }
-  
 ]
