@@ -45,19 +45,17 @@ function loadSoftware(category = "all", featuredOnly = false) {
             delay: 4000,
             disableOnInteraction: false,
           },
-          speed: 1200, // 
-          effect: 'coverflow',
+          speed: 1200,
+          effect: 'slide', // hoặc có thể bỏ dòng này vì đây là mặc định
           grabCursor: true,
-          centerSlides: true,
-          slidesPerView: 'auto',
-          coverflowEffect: {
-            rotate: 30,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            slideShadows: true,
+          centeredSlides: true,
+          slidesPerView: 1, // có thể chỉnh 'auto' nếu cần
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
           },
-
+        });
+        
           pagination: {
             el: '.swiper-pagination',
             clickable: true
