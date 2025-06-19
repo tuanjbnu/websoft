@@ -79,5 +79,14 @@
     "download": "https://aheskorea.cloud/software/imagej",
     "category": ["science", "all", "graphic"],
     "featured": false
+  },
+    "id": "chemoffice",
+    "name": "Chem Office",
+    "desc": "An efficient chemical drawing editor available to chemists",
+    "icon": "images/icon_chemoffice.png",
+    "download": "https://aheskorea.cloud/software/chemoffice",
+    "category": ["science", "all", "graphic", "office"],
+    "featured": false
   }
+  
 ]
