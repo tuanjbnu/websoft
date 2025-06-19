@@ -45,10 +45,16 @@ function loadSoftware(category = "all", featuredOnly = false) {
             delay: 4000,
             disableOnInteraction: false,
           },
-          speed: 1200, // ❗️Tốc độ chuyển slide (ms), mặc định là 300ms → tăng lên 1000–2000ms cho mượt hơn
-          effect: 'flip',
+          speed: 1200, // 
+          effect: 'coverflow',
+          grabCursor: true,
+          centerSlides: true,
+          slidesPerView: 'auto',
           coverflowEffect: {
             rotate: 30,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
             slideShadows: true,
           },
 
