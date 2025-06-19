@@ -45,7 +45,7 @@ function loadSoftware(category = "all", featuredOnly = false) {
             delay: 4000,
             disableOnInteraction: false,
           },
-          speed: 1200,
+          speed: 100,
           effect: 'fade',
           fadeEffect: {
             crossFade: true, // mượt mà hơn giữa các slide
