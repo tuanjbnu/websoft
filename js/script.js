@@ -56,12 +56,10 @@ function loadSoftware(category = "all", featuredOnly = false) {
             el: '.swiper-pagination',
             clickable: true,
           },
-        });
-       
           navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev'
-          }
+          }     
         });
 
         return; // Đã render slider, dừng hàm
