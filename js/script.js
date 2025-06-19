@@ -46,15 +46,18 @@ function loadSoftware(category = "all", featuredOnly = false) {
             disableOnInteraction: false,
           },
           speed: 1200,
-          effect: 'slide', // hoặc có thể bỏ dòng này vì đây là mặc định
+          effect: 'fade',
+          fadeEffect: {
+            crossFade: true, // mượt mà hơn giữa các slide
+          },
           grabCursor: true,
-          centeredSlides: true,
-          slidesPerView: 1, // có thể chỉnh 'auto' nếu cần
+          slidesPerView: 1,
           pagination: {
             el: '.swiper-pagination',
             clickable: true,
           },
         });
+
         
           pagination: {
             el: '.swiper-pagination',
