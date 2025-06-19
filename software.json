@@ -80,6 +80,8 @@
     "category": ["science", "all", "graphic"],
     "featured": false
   },
+  {
+
     "id": "chemoffice",
     "name": "Chem Office",
     "desc": "An efficient chemical drawing editor available to chemists",
@@ -88,6 +90,7 @@
     "category": ["science", "all", "graphic", "office"],
     "featured": false
   },
+  {
     "id": "peakfit412",
     "name": "Peak Fit 4.12",
     "desc": "A software package for peak separation and analysis",
