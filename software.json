@@ -33,7 +33,7 @@
     "icon": "images/icon_casaxps.png",
     "download": "https://aheskorea.cloud/software/casaxps",
     "category": ["all", "science"],
-    "featured": true
+    "featured": false
   },
   {
     "id": "labview",
