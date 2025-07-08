@@ -27,6 +27,15 @@
     "featured": true
   },
   {
+    "id": "casaxps",
+    "name": "CasaXPS",
+    "desc": "Analysis techniques for both spectral and imaging data",
+    "icon": "images/icon_casaxps.png",
+    "download": "https://aheskorea.cloud/software/casaxps",
+    "category": ["all", "science"],
+    "featured": true
+  },
+  {
     "id": "labview",
     "name": "LabVIEW",
     "desc": "Graphical programming for engineering systems",
