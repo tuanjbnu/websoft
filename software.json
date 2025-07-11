@@ -18,6 +18,15 @@
     "featured": true
   },
   {
+    "id": "highscore",
+    "name": "HighScore Plus",
+    "desc": "The ideal tool for crystallographic analysis and more",
+    "icon": "images/icon_highscore.png",
+    "download": "https://aheskorea.cloud/software/highscore",
+    "category": ["science", "all", "graphic", "office"],
+    "featured": false
+  },
+  {
     "id": "matlab",
     "name": "MATLAB",
     "desc": "Numerical computing and simulation",
